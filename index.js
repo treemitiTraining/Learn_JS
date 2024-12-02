@@ -1,8 +1,10 @@
-let sirname = "gosavi";
-let studentName = `yash's sir name is = ${sirname}` ;
-// ''
-// ""
-// ``
+let a = 20;
+let b = 10;
 
-// Template literals  `${}`
-console.log(studentName);
+
+/*
+
+b=20;
+a=10;
+
+*/ 
