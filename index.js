@@ -1,24 +1,12 @@
-let userInput = prompt('Write fruite name');
-// console.log(userInput);
+let i = 0;
+let userInput = +prompt();
 
-
-
-switch (userInput) {
-    case "index":
-        console.log(userInput + " = " + "100kg");
-        break;
-    case "Kiwi":
-        console.log(userInput + " = " + '200kg');
-        break;
-    default:
-        console.log("No fruit available");
-        break;
+while (userInput > i) {
+    let j = 0;
+    while (userInput >= j) {
+        document.write("*");
+        j++;
+    }
+    document.write("<br/>")
+    i++;
 }
-
-
-/*
- (key === value){
-
- }
-
-*/
