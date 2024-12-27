@@ -1,21 +1,3 @@
-// let userValue1 = +prompt();
-// let userValue2 = +prompt();
-
-// function test(a = 0, b = 0) {
-//     let result = a + b;
-//     return result;
-// }
-
-
-// document.write(
-//     test(userValue1, userValue2)
-// )
-
-'use strict'
-
-g = 10;
-console.log(g);
-
-
-
-
+var fruits = ['Apple', 'Orange', 'Kiwi', 'Strawberry'];
+console.log(fruits.slice(1, 3));
+// console.log(fruits);
