@@ -45,8 +45,6 @@ var myArray = [45, "Ninja", name(),];
   3) elements to be inserted
 */
 
-
-
 arr.splice(1, 1);
 arr.splice(2, 0, 10);
 arr.splice(2, 2, 40, 50);
