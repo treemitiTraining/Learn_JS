@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scroll Event Example</title>
   <style>
-    body {
-      height: 1500px; /* Just for demonstration - to create a scrollable page */
-    }
     #scrollInfo {
       position: fixed;
       top: 10px;
@@ -16,27 +14,39 @@
       padding: 10px;
       border: 1px solid #ccc;
     }
-  
+
+    section {
+      height: 100vh;
+      width: 100vw;
+    }
   </style>
 </head>
+
 <body>
+  <div id="wrapper" style="height: 5px; background-color: red; position: fixed; top: 0;"></div>
+  <div id="scrollInfo">Scroll position: 0px </div>
 
-<div id="scrollInfo">Scroll position: 0px</div>
+  <section></section>
+  <section></section>
+  <section></section>
+  <script>
+    let wrapper = document.getElementById('wrapper');
+    // Function to update scroll position information
+    function updateScrollInfo() {
+      const scrollPosition = window.scrollY;
+      document.getElementById('scrollInfo').innerText = 'Scroll position: ' + scrollPosition + 'px';
 
-<script>
-  // Function to update scroll position information
-  function updateScrollInfo() {
-    const scrollPosition = window.scroll;
-    document.getElementById('scrollInfo').innerText = 'Scroll position: ' + scrollPosition + 'px';
-    wrapper.style.width= scrollPosition;
-  }
 
-  // Attach the updateScrollInfo function to the scroll event
-  window.addEventListener('scroll', updateScrollInfo);
+      wrapper.style.width = scrollPosition + 'px';
+    }
 
-  // Initial call to set the initial scroll position
-  updateScrollInfo();
-</script>
+    // Attach the updateScrollInfo function to the scroll event
+    window.addEventListener('scroll', updateScrollInfo);
+
+    // Initial call to set the initial scroll position
+    updateScrollInfo();
+  </script>
 
 </body>
+
 </html>

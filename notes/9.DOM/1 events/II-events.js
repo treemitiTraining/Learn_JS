@@ -23,6 +23,3 @@ btn.addEventListener('click', function(){
 // classList.add
 // classList.remove
 // classList.toggle
-
-
-// Strict Mode
