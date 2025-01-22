@@ -72,7 +72,7 @@ for (var i = 0; i <= arr.length; i++) {
 let ag = arr.indexOf("apple");
 console.log(ag);
 
-// includes()
+// includes() true or false, ?
 let ac = arr.includes("apple");
 console.log(ag);
 
