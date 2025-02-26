@@ -1,13 +1,5 @@
-var btn = document.getElementById('btn');
-var popup = document.getElementById('popup');
+let a = 'yasssssssh'
+let b = 'gosavi'
 
-
-
-btn.addEventListener('click', networkTesting);
-
-
-function networkTesting() {
-    let network = navigator.onLine;
-    alert(network);
-
-}
+let ans = a.lastIndexOf('s');
+console.log(ans);
